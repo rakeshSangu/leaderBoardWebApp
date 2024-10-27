@@ -11,7 +11,7 @@ class Home extends Component {
     }
 
   componentDidMount = async () => {
-    const response = await fetch('http://localhost:7000/api/user/v1/get-users')
+    const response = await fetch('https://leaderboardwebapp-backend.onrender.com/api/user/v1/get-users')
     const listeddata = await response.json()
     const {data} = listeddata
     this.setState({
@@ -32,7 +32,7 @@ class Home extends Component {
       body: JSON.stringify(friendObj),
     }
 
-    const response = await fetch(`http://localhost:7000/api/user/v1/claim-points`,options)
+    const response = await fetch(`https://leaderboardwebapp-backend.onrender.com/api/user/v1/claim-points`,options)
     if(response.ok){
         const responseData = await response.json()
         const {message} = responseData
