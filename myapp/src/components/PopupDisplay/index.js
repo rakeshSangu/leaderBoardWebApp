@@ -9,7 +9,7 @@ class PopupDisplay extends Component {
 
     componentDidMount = async () => {
         const {user} = this.props
-        const apiUrl = `http://localhost:7000/api/user/v1/your-history`
+        const apiUrl = `https://leaderboardwebapp-backend.onrender.com/api/user/v1/your-history`
         const userObj = {"username": user}
     
         const option = {
