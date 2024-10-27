@@ -1,0 +1,143 @@
+.leader-full-container{
+    display: flex;
+    flex-direction: column;
+}
+.leader-top-box{
+    background-color: rgb(176, 176, 245);
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+    padding: 10px;
+}
+.leader-bottom-container{
+    background-color: rgb(251, 248, 252);
+}
+
+.tabs-list-container{
+    width: 100%;
+    list-style: none;
+    padding-left: 0px;
+    display: flex;
+    justify-content: space-around;
+}
+.tab-item{
+    background-color: rgb(233, 229, 233);
+    padding: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 50px;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+.active-tab{
+    background-color: rgb(75, 34, 170);
+    color: white;
+}
+.top-3-leader-container{
+    list-style: none;
+    padding-left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.top-list-item{
+    text-align: center;
+    padding: 6px;
+    width: 30%;
+}
+.top-name{
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0px;
+}
+.top-points-para{
+    color: black;
+    font-weight: 500;
+    font-size: 19px;
+    margin: 3px;
+}
+.rupees-para{
+    color: orange;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0px;
+}
+
+.all-list-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    list-style: none;
+    padding-left: 0px;
+}
+.leader-board-list_item{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.list-item-user-contaiiner{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 30%;
+}
+.user-icon{
+    margin-right: px;
+    height: 20px;
+    width: 20px;
+}
+.details-para{
+    font-weight: 500;
+    font-size: 18px;
+}
+.list-prize{
+    color: orange;
+    font-size: 18px;
+    font-weight: 500;
+    width: 30%;
+    text-align: center;
+}
+.list-points{
+    color: blue;
+    font-size: 20px;
+    font-weight: 500;
+    width: 30%;
+    text-align: center;
+}
+.user-name-button{
+    background-color: transparent;
+    border-style: none;
+    outline: none;
+    cursor: pointer;
+}
+
+
+
+
+
+@media(min-width: 992px){
+    .leader-full-container{
+        margin: 40px;
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .tabs-list-container{
+        width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+    }
+    .top-name{
+        font-size: 25px;
+    }
+    .top-points-para{
+        font-size: 21px;
+    }
+    .rupees-para{
+        font-size: 18px;
+    }
+}

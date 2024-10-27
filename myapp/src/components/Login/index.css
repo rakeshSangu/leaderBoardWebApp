@@ -1,0 +1,63 @@
+.login-background-section {
+    background-color: black;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .form-box {
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px;
+    margin: 10px;
+  }
+  .input-container {
+    margin-bottom: 20px;
+  }
+  .label-ele {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  .login-input {
+    width: 100%;
+    padding: 5px;
+    font-size: 23px;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+  }
+  .login-button {
+    background-color: rgb(155, 155, 244);
+    width: 100%;
+    padding: 8px;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    border-style: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .check-box-container{
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+  }
+  .checkbox-ele{
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+  }
+  .show-password-label{
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .error-para{
+    color: red;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0px;
+    margin-top: 3px;
+  }
