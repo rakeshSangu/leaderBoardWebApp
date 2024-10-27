@@ -19,7 +19,7 @@ class Header extends Component{
             }
         }
     
-        const response = await fetch(`http://localhost:7000/api/user/v1/get-users-info`,options)
+        const response = await fetch(`https://leaderboardwebapp-backend.onrender.com/api/user/v1/get-users-info`,options)
         if(response.ok){
             const responseData = await response.json()
             const {data}= responseData
