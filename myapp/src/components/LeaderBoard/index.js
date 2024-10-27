@@ -63,19 +63,7 @@ class LeaderBoard extends Component {
     }
   }
 
-  viewHistory = (id) => {
-    fetch('http://localhost:7000/api/user/v1/your-history', {
-      method: 'POST',
-      body: JSON.stringify({ userId: id }),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        alert(`Points History: ${JSON.stringify(data.history)}`);
-      });
-  };
+
 
   onChangeActiveTab = (id) => {
     this.setState({
@@ -111,29 +99,6 @@ class LeaderBoard extends Component {
     )
   }
 
-  renderPopupHistoryView = async (user) => {
-    const apiUrl = `http://localhost:7000/api/user/v1/your-history`
-    const userObj = {"username": user}
-    
-    const option = {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify(userObj)
-    }
-    const response= await fetch(apiUrl,option);
-    if(response.ok){
-        const responseData = await response.json()
-        console.log(responseData)
-    }
-     
-  }
-
-  click = () => {
-    console.log("clicked")
-  }
-
 
   renderAllUsersView = () => {
     const {leadersList} = this.state
@@ -149,7 +114,7 @@ class LeaderBoard extends Component {
 
                             <Popup 
                             trigger={
-                                    <button onClick={this.click} className='user-name-button'>
+                                    <button className='user-name-button'>
                                         <p className='details-para'>{each._id} <br/> Rank: {rank+1}</p>
                                     </button>
                                     }
