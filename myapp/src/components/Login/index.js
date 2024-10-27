@@ -40,7 +40,7 @@ class Login extends Component {
       },
       body: JSON.stringify(userObj),
     }
-    const response = await fetch('http://localhost:7000/api/auth/v1/login',options)
+    const response = await fetch('https://leaderboardwebapp-backend.onrender.com/api/auth/v1/login',options)
     const data = await response.json()
     if(response.ok){
       const {token} = data
