@@ -38,7 +38,7 @@ class LeaderBoard extends Component {
   getUserInfo = async () => {
     const {activeTabId} = this.state
     
-    const apiUrl = `http://localhost:7000/api/user/v1//your-${activeTabId}-history`
+    const apiUrl = `https://leaderboardwebapp-backend.onrender.com/api/user/v1//your-${activeTabId}-history`
     const response= await fetch(apiUrl);
     
     if(response.ok){
