@@ -57,7 +57,7 @@ class Home extends Component {
         <div>
             <h1 className="home-heading">Friends List</h1>
             <ul className="friends-list">
-            {friends.map((friend) => (
+            {friends.length>0 && friends.map((friend) => (
                 <li className="friend-list-item" key={friend._id}>
                     <p onClick={() => this.claimPoints(friend._id,friend.username)} className="friend-name">{friend.username}</p>
                     <p className="friend-points">{friend.Points} Points</p>
